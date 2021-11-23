@@ -1,0 +1,63 @@
+<div>
+  <div class="flex-row d-flex">
+    <button
+      type="button"
+      class="mb-2 ml-auto me-3 btn btn-primary d-block"
+      data-bs-toggle="modal"
+      data-bs-target="#addModalForm"
+    >
+      Data +
+    </button>
+  </div>
+
+  <!--Display API data in a table-->
+  <table class="table table-bordered border-success table-responsive">
+    <thead>
+      <tr>
+        <th scope="col" style="width: 20px">UserID</th>
+        <th scope="col" style="width: 10px">ID</th>
+        <th scope="col">Title</th>
+        <th scope="col">Content</th>
+        <th scope="col" style="width: 10px">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- <tr *ngFor="let data of listData | async | searchFilter: searchTerm; index as i"> -->
+      <tr *ngFor="let data of listData | async; index as i">
+        <td>{{ data.userId }}</td>
+        <td>{{ data.id }}</td>
+        <td>{{ data.title }}</td>
+        <td>{{ data.body }}</td>
+        <td>
+          <button
+            type="button"
+            class="mb-2 ml-auto btn btn-primary d-block"
+            data-bs-toggle="modal"
+            data-bs-target="#editModalForm"
+            (click)="editModal(data)"
+          >
+            Edit
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--Add modal form-->
+  <div
+    class="modal fade"
+    id="addModalForm"
+    tabIndex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  ></div>
+
+  <!--Edit modal form-->
+  <div
+    class="modal fade"
+    id="editModalForm"
+    tabIndex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  ></div>
+</div>
