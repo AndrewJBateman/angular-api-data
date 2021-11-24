@@ -1,6 +1,6 @@
 # :zap: Angular API Data
 
-* Angular app to fetch API data and display it in a table using RxJS observables
+* Angular app to fetch API data and display it in a table using RxJS observables, where CRUD operations are possible
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-api-data?style=plastic)
@@ -25,17 +25,20 @@
 
 ## :books: General info
 
-* Displays table of API data
+* Displays table of API data with CRUD actions using the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/guide/)
+* Angular folder structure best practises followed with CRUD service and data pipe in their own folders.
+* Bootstrap form used with search filter
 
 ## :camera: Screenshots
 
-![screenshot](./img/api.jpg)
+![screenshot](./img/table.jpg)
 
 ## :signal_strength: Technologies
 
-* [Angular framework v13](https://angular.io/)
+* [Angular v13](https://angular.io/) Javascript framework
 * [Bootstrap v5](https://getbootstrap.com/)
 * [Rxjs v7](https://rxjs.dev/) Reactive Extensions Library for JavaScript
+* [JSONPlaceholder API](https://jsonplaceholder.typicode.com/guide/)
 
 ## :floppy_disk: Setup
 
@@ -57,17 +60,17 @@
 
 ## :cool: Features
 
-* tba
+* Can be connected to a backend database
 
 ## :clipboard: Status, Testing & To-Do List
 
-* Status: In work
+* Status: Working
 * Testing: tba
-* To-Do: complete
+* To-Do: Move add & edit data code to their own components with navigation, connect database
 
-## :clap: Inspiration/General Tools
+## :clap: Inspiration
 
-* tba
+* [Tektutorialshub: Angular Folder Structure Best Practices](https://www.tektutorialshub.com/angular/angular-folder-structure-best-practices/)
 
 ## :file_folder: License
 
