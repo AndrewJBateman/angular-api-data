@@ -32,7 +32,7 @@
 
 ## :camera: Screenshots
 
-![screenshot](./imgs/table.jpg)
+![screenshot](./imgs/table.png)
 
 ## :signal_strength: Technologies
 
