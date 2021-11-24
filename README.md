@@ -1,6 +1,7 @@
 # :zap: Angular API Data
 
-* Angular app to fetch API data and display it in a table using RxJS observables, where CRUD operations are possible
+* Angular app to fetch API data and display it in a table using RxJS observables
+* Creat, Read, Update & Delete (CRUD) operations can be carried on table data
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-api-data?style=plastic)
@@ -31,7 +32,7 @@
 
 ## :camera: Screenshots
 
-![screenshot](./img/table.jpg)
+![screenshot](./imgs/table.jpg)
 
 ## :signal_strength: Technologies
 
@@ -66,7 +67,7 @@
 
 * Status: Working
 * Testing: tba
-* To-Do: Move add & edit data code to their own components with navigation, connect database
+* To-Do: Move add & edit data code to their own components with navigation, connect database.
 
 ## :clap: Inspiration
 
