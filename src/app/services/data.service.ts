@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Data } from '@angular/router';
+import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Injectable({
@@ -13,12 +15,14 @@ export class DataService {
   postData(data: any) {
     return this.http.post(this.baseUrl, JSON.stringify(data)).pipe(
       map((response: any) => {
+        const postDataResponse = response;
+        console.log('postDataResponse', postDataResponse);
         return response;
       })
     );
   }
 
-  getData() {
+  getData(): Observable<Data[]> {
     return this.http.get(this.baseUrl).pipe(
       map((response: any) => {
         return response;
@@ -26,17 +30,22 @@ export class DataService {
     );
   }
 
-  updateData(data: any, id?: number) {
+  updateData(data: any, id?: number): Observable<Data> {
     return this.http.patch(`${this.baseUrl}/${id}`, data).pipe(
       map((response: any) => {
+        const updateResponse = response.json();
+        console.log('updateResponse: ', updateResponse);
         return response.json;
       })
     );
   }
 
   deleteData(id: number) {
-    return this.http.delete(`${this.baseUrl}/${id}`).pipe(map((response: any) => {
-      return response.json;
-    }))
+    return this.http.delete(`${this.baseUrl}/${id}`).pipe(
+      map((response: any) => {
+        const deleteResponse = response.json;
+        console.log('deleteResponse: ', deleteResponse);
+      })
+    );
   }
 }

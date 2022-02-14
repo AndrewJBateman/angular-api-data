@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { Data } from 'src/app/interfaces/data';
 import { DataService } from 'src/app/services/data.service';
@@ -40,13 +40,14 @@ export class ListDataComponent implements OnInit {
   }
 
   getAllData(): void {
-    this.dataService.getData().subscribe((res) => {
-      this.listData = res;
-      console.log('list data: ', this.listData);
-    });
+    this.listData = this.dataService
+      .getData()
+      .subscribe((res: any) => {
+        this.listData = res;
+      });
   }
 
-  postData() {
+  postData(): void {
     const { value } = this.formValue;
     console.log('form value: ', value);
 
@@ -56,7 +57,6 @@ export class ListDataComponent implements OnInit {
       title: value.title,
       body: value.body,
     };
-    console.log('data object: ', dataObj);
 
     this.dataService.postData(dataObj).subscribe((res) => {
       dataObj['id'] = res.id;
@@ -67,7 +67,6 @@ export class ListDataComponent implements OnInit {
   }
 
   editModal(editData: any) {
-    console.log('editData.id: ', editData.id);
     this.editDataModal = editData;
   }
 
@@ -87,7 +86,7 @@ export class ListDataComponent implements OnInit {
       });
   }
 
-  deleteData(data: any): void {
+  deleteData(data: Data): void {
     this.dataService.deleteData(data.id).subscribe((res) => {
       let index = this.listData.indexOf(data);
       this.listData.splice(index, 1);
