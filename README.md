@@ -53,10 +53,16 @@
 
 ## :computer: Code Examples
 
-* tba
+* `data.service.ts` function to get data arry from API
 
 ```typescript
-
+  getData(): Observable<Data[]> {
+    return this.http.get(this.baseUrl).pipe(
+      map((response: any) => {
+        return response;
+      })
+    );
+  }
 ```
 
 ## :cool: Features
@@ -66,7 +72,6 @@
 ## :clipboard: Status, Testing & To-Do List
 
 * Status: Working
-* Testing: tba
 * To-Do: Move add & edit data code to their own components with navigation, connect database.
 
 ## :clap: Inspiration
