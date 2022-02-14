@@ -1,7 +1,7 @@
 # :zap: Angular API Data
 
 * Angular app to fetch API data and display it in a table using RxJS observables
-* Creat, Read, Update & Delete (CRUD) operations can be carried on table data
+* Create, Read, Update & Delete (CRUD) operations can be carried out on a table of data fetched from [the JSONPlaceholder API](https://jsonplaceholder.typicode.com/guide/)
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-api-data?style=plastic)
