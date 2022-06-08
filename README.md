@@ -11,15 +11,16 @@
 
 ## :page_facing_up: Table of contents
 
-* [Angular API Data](#angular-api-data)
+* [:zap: Angular API Data](#zap-angular-api-data)
   * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
   * [:signal_strength: Technologies](#signal_strength-technologies)
   * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:wrench: Testing](#wrench-testing)
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
-  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clipboard: Status, Testing & To-Do List](#clipboard-status-testing--to-do-list)
   * [:clap: Inspiration](#clap-inspiration)
   * [:file_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
@@ -36,9 +37,9 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v13](https://angular.io/) Javascript framework
+* [Angular v14](https://angular.io/) Javascript framework
 * [Bootstrap v5](https://getbootstrap.com/)
-* [Rxjs v7](https://rxjs.dev/) Reactive Extensions Library for JavaScript
+* [RxJS v7](https://rxjs.dev/) Reactive Extensions Library for JavaScript
 * [JSONPlaceholder API](https://jsonplaceholder.typicode.com/guide/)
 
 ## :floppy_disk: Setup
@@ -72,7 +73,7 @@
 ## :clipboard: Status, Testing & To-Do List
 
 * Status: Working
-* To-Do: Move add & edit data code to their own components with navigation, connect database.
+* To-Do: Move add & edit data code to their own components with navigation, connect database. Fix 2x filter errors that appear in localhost console.
 
 ## :clap: Inspiration
 
