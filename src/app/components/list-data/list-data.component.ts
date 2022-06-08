@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 
 import { Data } from 'src/app/interfaces/data';
 import { DataService } from 'src/app/services/data.service';
@@ -10,8 +10,8 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./list-data.component.css'],
 })
 export class ListDataComponent implements OnInit {
-  formValue!: FormGroup;
-  updateFormValue!: FormGroup;
+  formValue!: UntypedFormGroup;
+  updateFormValue!: UntypedFormGroup;
   listData!: any;
   newData: any;
   editDataModal: any;
@@ -20,7 +20,7 @@ export class ListDataComponent implements OnInit {
 
   constructor(
     private dataService: DataService,
-    private formBuilder: FormBuilder
+    private formBuilder: UntypedFormBuilder
   ) {}
 
   ngOnInit(): void {
