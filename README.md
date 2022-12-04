@@ -37,7 +37,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v14](https://angular.io/) Javascript framework
+* [Angular v15](https://angular.io/) Javascript framework
 * [Bootstrap v5](https://getbootstrap.com/)
 * [RxJS v7](https://rxjs.dev/) Reactive Extensions Library for JavaScript
 * [JSONPlaceholder API](https://jsonplaceholder.typicode.com/guide/)
@@ -72,8 +72,8 @@
 
 ## :clipboard: Status, Testing & To-Do List
 
-* Status: Working
-* To-Do: Move add & edit data code to their own components with navigation, connect database. Fix 2x filter errors that appear in localhost console.
+* Status: Working but some erors
+* To-Do: Move add & edit data code to their own components with navigation, connect database. Fix 2x filter errors that appear in localhost console. Add form types
 
 ## :clap: Inspiration
 
