@@ -15,8 +15,6 @@ export class DataService {
   postData(data: any) {
     return this.http.post(this.baseUrl, JSON.stringify(data)).pipe(
       map((response: any) => {
-        const postDataResponse = response;
-        console.log('postDataResponse', postDataResponse);
         return response;
       })
     );

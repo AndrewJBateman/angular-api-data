@@ -40,16 +40,13 @@ export class ListDataComponent implements OnInit {
   }
 
   getAllData(): void {
-    this.listData = this.dataService
-      .getData()
-      .subscribe((res: any) => {
-        this.listData = res;
-      });
+    this.listData = this.dataService.getData().subscribe((res: any) => {
+      this.listData = res;
+    });
   }
 
   postData(): void {
     const { value } = this.formValue;
-    console.log('form value: ', value);
 
     const dataObj = {
       id: value.id,
