@@ -73,7 +73,7 @@
 ## :clipboard: Status, Testing & To-Do List
 
 * Status: Working but some erors
-* To-Do: Move add & edit data code to their own components with navigation, connect database. Fix 2x filter errors that appear in localhost console. Add form types
+* To-Do: Move add & edit data code to their own components with navigation, connect database. Remove [ngModel] and fix 2x filter errors that appear in localhost console. Add form types
 
 ## :clap: Inspiration
 
